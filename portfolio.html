@@ -1,1 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Zomato delivery analytics and time prediction project using Python, PostgreSQL, XGBoost and Power BI.">
+  <title>Zomato Delivery Analytics | Project Portfolio</title>
 
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0b1120;
+      color: #e5e7eb;
+      line-height: 1.7;
+    }
+
+    a {
+      color: #fb7185;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    header {
+      padding: 22px 8%;
+      border-bottom: 1px solid #263247;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    header strong {
+      color: #fff;
+      font-size: 18px;
+    }
+
+    header strong span,
+    h1 span {
+      color: #fb7185;
+    }
+
+    nav a {
+      margin-left: 18px;
+      color: #cbd5e1;
+      font-size: 14px;
+    }
+
+    .container {
+      width: 84%;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .hero {
+      padding: 85px 0 65px;
+    }
+
+    .tag {
+      color: #fda4af;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    h1 {
+      font-size: clamp(34px, 6vw, 58px);
+      line-height: 1.15;
+      color: #fff;
+      margin: 18px 0;
+    }
+
+    .hero p {
+      color: #aab6ca;
+      max-width: 720px;
+      font-size: 17px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-top: 28px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 11px 18px;
+      border-radius: 7px;
+      font-weight: bold;
+      border: 1px solid #fb7185;
+    }
+
+    .primary {
+      background: #fb7185;
+      color: #111827;
+    }
+
+    .secondary {
+      color: #fda4af;
+    }
+
+    section {
+      padding: 45px 0;
+    }
+
+    h2 {
+      color: #fff;
+      font-size: 27px;
+      margin-bottom: 18px;
+    }
+
+    h3 {
+      color: #fff;
+      margin-bottom: 8px;
+    }
+
+    section p {
+      color: #aab6ca;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 16px;
+      margin-top: 22px;
+    }
+
+    .card {
+      background: #131d30;
+      border: 1px solid #263247;
+      border-radius: 12px;
+      padding: 22px;
+    }
+
+    .metric {
+      color: #fb7185;
+      font-size: 29px;
+      font-weight: bold;
+    }
+
+    .label {
+      color: #aab6ca;
+      font-size: 14px;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .skills span {
+      background: #1c293e;
+      color: #fda4af;
+      border: 1px solid #344258;
+      border-radius: 20px;
+      padding: 6px 12px;
+      font-size: 13px;
+    }
+
+    ul {
+      padding-left: 22px;
+      color: #cbd5e1;
+    }
+
+    li {
+      margin: 8px 0;
+    }
+
+    .note {
+      font-size: 14px;
+      margin-top: 12px;
+    }
+
+    footer {
+      border-top: 1px solid #263247;
+      margin-top: 45px;
+      padding: 25px 8%;
+      color: #94a3b8;
+      text-align: center;
+      font-size: 13px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        padding: 18px 6%;
+      }
+
+      nav a {
+        margin-left: 8px;
+      }
+
+      .container {
+        width: 88%;
+      }
+
+      .hero {
+        padding-top: 55px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <strong>Project<span>.</span>Portfolio</strong>
+    <nav>
+      <a href="#overview">Overview</a>
+      <a href="#results">Results</a>
+      <a href="#analysis">Insights</a>
+      <a href="#contact">Links</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+
+      <section class="hero" id="overview">
+        <div class="tag">Data Analytics · Machine Learning</div>
+        <h1>Zomato Delivery<br><span>Analytics &amp; Prediction</span></h1>
+
+        <p>
+          An end-to-end project exploring food delivery performance,
+          analyzing factors that affect delivery time, and predicting
+          delivery duration using machine learning.
+        </p>
+
+        <div class="buttons">
+          <a class="btn primary"
+             href="https://github.com/chandramohanh85-lab/Zomato-delivery-analytics">
+            View GitHub Project
+          </a>
+          <a class="btn secondary" href="#results">Explore Results</a>
+        </div>
+      </section>
+
+      <section>
+        <h2>Project Overview</h2>
+        <p>
+          I used Python for data cleaning and exploratory analysis,
+          PostgreSQL for querying delivery trends, XGBoost for delivery
+          time prediction, and Power BI to present the findings in an
+          interactive dashboard. The project focuses on understanding
+          how traffic, weather, vehicle condition, and multiple deliveries
+          relate to delivery performance.
+        </p>
+
+        <div class="skills">
+          <span>Python</span>
+          <span>Pandas</span>
+          <span>PostgreSQL</span>
+          <span>Power BI</span>
+          <span>XGBoost</span>
+          <span>Scikit-learn</span>
+          <span>EDA</span>
+          <span>Data Visualization</span>
+        </div>
+      </section>
+
+      <section id="results">
+        <h2>Key Results</h2>
+
+        <div class="grid">
+          <div class="card">
+            <div class="metric">45,584</div>
+            <div class="label">Delivery records analyzed</div>
+          </div>
+
+          <div class="card">
+            <div class="metric">26.29 min</div>
+            <div class="label">Average delivery time</div>
+          </div>
+
+          <div class="card">
+            <div class="metric">3.12 min</div>
+            <div class="label">Test MAE (latest model run)</div>
+          </div>
+
+          <div class="card">
+            <div class="metric">0.824</div>
+            <div class="label">Test R² score (latest model run)</div>
+          </div>
+        </div>
+
+        <p class="note">
+          The latest model run produced an RMSE of 3.92 minutes.
+          Results may vary with preprocessing and model settings.
+        </p>
+      </section>
+
+      <section id="analysis">
+        <h2>What I Found</h2>
+
+        <div class="grid">
+          <div class="card">
+            <h3>Traffic Conditions</h3>
+            <p>
+              Average delivery time ranged from 21.46 minutes under
+              low traffic to 31.18 minutes under jam conditions.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Multiple Deliveries</h3>
+            <p>
+              Average delivery time was 22.88 minutes for orders with
+              zero additional deliveries and 47.82 minutes for orders
+              with three. These are observed associations in the dataset.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Weather &amp; Festivals</h3>
+            <p>
+              Delivery times varied across weather conditions and
+              festival periods in the dataset.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Project Workflow</h2>
+        <ul>
+          <li>Cleaned and prepared 45,584 delivery records.</li>
+          <li>Explored delivery trends and relationships using Python.</li>
+          <li>Queried delivery performance using PostgreSQL.</li>
+          <li>Trained and evaluated an XGBoost regression model.</li>
+          <li>Built a Power BI dashboard to explore delivery metrics.</li>
+          <li>Tested hypothetical scenarios for potential delivery-time reduction.</li>
+        </ul>
+
+        <p class="note">
+          The optimization scenarios are estimates based on simplified
+          assumptions, not measured improvements from a deployed system.
+        </p>
+      </section>
+
+      <section id="contact">
+        <h2>Project Links</h2>
+
+        <div class="grid">
+          <div class="card">
+            <h3>Source &amp; Files</h3>
+            <p>
+              Explore the project documentation, datasets, and analysis results.
+            </p>
+
+            <p style="margin-top: 14px;">
+              <a href="https://github.com/chandramohanh85-lab/Zomato-delivery-analytics">
+                Open GitHub Repository →
+              </a>
+            </p>
+
+            <p style="margin-top: 14px;">
+              <a href="https://github.com/chandramohanh85-lab/Zomato-delivery-analytics/blob/main/Zomato_Delivery_Analytics_Project_Report.pdf">
+                View Project Report (PDF) →
+              </a>
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Power BI Dashboard</h3>
+            <p>
+              Browse the repository's dashboard folder to find the
+              uploaded Power BI file.
+            </p>
+
+            <p style="margin-top: 14px;">
+              <a href="https://github.com/chandramohanh85-lab/Zomato-delivery-analytics/tree/main/dashboard">
+                View Dashboard Files →
+              </a>
+            </p>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    Zomato Delivery Analytics &amp; Time Prediction · Data Analytics Project
+  </footer>
+</body>
+</html>
