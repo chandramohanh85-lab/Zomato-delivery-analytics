@@ -84,7 +84,7 @@ These results are estimates based on a simplified assumption. They do not repres
 - [Multiple Delivery Policy Comparison](data/Multiple_Delivery_Policy_Comparison.csv)
 - [Optimization Scenario Results](data/Optimization_Scenario_Results.csv)
 - [Project Report (PDF)](dashboard/Zomato_Delivery_Analytics_Project_Report_Final.pdf)
-- 
+
 ## About Me
 
 I am a Mechanical Engineering student at BIT Mesra with an interest in data analytics, machine learning, and operations optimization. Through this project, I wanted to apply data analysis and machine learning techniques to a real-world delivery problem.
