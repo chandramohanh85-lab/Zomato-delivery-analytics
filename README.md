@@ -84,6 +84,7 @@ These results are estimates based on a simplified assumption. They do not repres
 - [Multiple Delivery Policy Comparison](data/Multiple_Delivery_Policy_Comparison.csv)
 - [Optimization Scenario Results](data/Optimization_Scenario_Results.csv)
 - [Project Report (PDF)](dashboard/Zomato_Delivery_Analytics_Project_Report_Final.pdf)
+-[Download Power BI Dashboard](dashboard/Zomato_Delivery_Analytics.pbix)
 
 ## About Me
 
