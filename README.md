@@ -72,6 +72,19 @@ These results are estimates based on a simplified assumption. They do not repres
 - Explore route planning and delivery assignment optimization.
 - Develop a simple application for predicting delivery time.
 
+## Project Files
+
+- [Cleaned Dataset](data/Zomato_Cleaned_Data.csv)
+- [Delivery Predictions](data/Delivery_Predictions.csv)
+- [Model Performance](data/Model_Performance.csv)
+- [Feature Importance](data/Feature_Importance.csv)
+- [Traffic Analysis](data/Traffic_Analysis.csv)
+- [Project Summary](data/Project_Summary.csv)
+- [Multiple Delivery Experiment](data/Multiple_Delivery_Experiment.csv)
+- [Multiple Delivery Policy Comparison](data/Multiple_Delivery_Policy_Comparison.csv)
+- [Optimization Scenario Results](data/Optimization_Scenario_Results.csv)
+- [Project Report (PDF)](dashboard/Zomato_Delivery_Analytics_Project_Report_Final.pdf)
+- 
 ## About Me
 
 I am a Mechanical Engineering student at BIT Mesra with an interest in data analytics, machine learning, and operations optimization. Through this project, I wanted to apply data analysis and machine learning techniques to a real-world delivery problem.
