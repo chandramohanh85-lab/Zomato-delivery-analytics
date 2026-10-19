@@ -1,0 +1,5 @@
+Scenario,Average_Delivery_Time_Min,Estimated_Reduction_Percent
+Baseline,26.29,0.0
+10% scenario,26.22,0.28
+20% scenario,26.14,0.58
+30% scenario,26.07,0.87
