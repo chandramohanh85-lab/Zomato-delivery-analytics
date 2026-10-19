@@ -23,11 +23,11 @@ I started by cleaning the dataset and performing exploratory data analysis in Py
 |---|---:|
 | Total delivery records | 45,584 |
 | Average delivery time | 26.29 minutes |
-| Mean Absolute Error (MAE) | 3.62 minutes |
-| Root Mean Squared Error (RMSE) | 4.56 minutes |
-| R² Score | 0.764 |
+| Mean Absolute Error (MAE) | 3.12 minutes |
+| Root Mean Squared Error (RMSE) | 3.92 minutes |
+| R² Score | 0.824 |
 
-The XGBoost model achieved an MAE of 3.62 minutes on the test dataset. This means its predictions differed from the actual delivery times by about 3.62 minutes on average.
+The latest XGBoost model achieved an MAE of approximately 3.12 minutes on the test dataset. This means its predictions differed from the actual delivery times by about 3.12 minutes on average.
 
 ## Key Insights
 
